@@ -47,7 +47,8 @@ function select(event) {
     cor()
   } else { 
     document.getElementById('answer').innerHTML = 'Errou! Tente novamente!'
-    document.getElementById('acertos').innerHTML = 0
+    count = 0
+    document.getElementById('acertos').innerHTML = count
     event.target.classList.remove('selected');
     colorirPaleta()
     cor()
